@@ -19,7 +19,7 @@ namespace PerifaZenda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PedidoFornecedor());
+            Application.Run(new TelaLogin());
         }
 
        
