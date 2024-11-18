@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vendas));
             this.buttonHome = new System.Windows.Forms.Button();
             this.groupBoxEstoqueProdutos = new System.Windows.Forms.GroupBox();
             this.textBoxValorTotal = new System.Windows.Forms.TextBox();
@@ -209,6 +210,7 @@
             this.ClientSize = new System.Drawing.Size(1214, 450);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.groupBoxEstoqueProdutos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Vendas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendas";

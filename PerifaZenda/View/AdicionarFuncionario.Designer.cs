@@ -31,6 +31,7 @@ namespace PerifaZenda
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdicionarFuncionario));
             this.buttonHome = new System.Windows.Forms.Button();
             this.groupBoxAdicionarFornecedor = new System.Windows.Forms.GroupBox();
             this.textBoxBairro = new System.Windows.Forms.TextBox();
@@ -49,6 +50,8 @@ namespace PerifaZenda
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxNomeESobrenome = new System.Windows.Forms.TextBox();
             this.comboBoxDepartamento = new System.Windows.Forms.ComboBox();
+            this.tipoFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbPerifaZendaDataSet = new PerifaZenda.dbPerifaZendaDataSet();
             this.textBoxCPF = new System.Windows.Forms.TextBox();
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,13 +59,11 @@ namespace PerifaZenda
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dbPerifaZendaDataSet = new PerifaZenda.dbPerifaZendaDataSet();
-            this.tipoFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tipoFuncionarioTableAdapter = new PerifaZenda.dbPerifaZendaDataSetTableAdapters.TipoFuncionarioTableAdapter();
             this.groupBoxAdicionarFornecedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbPerifaZendaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoFuncionarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbPerifaZendaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonHome
@@ -271,6 +272,16 @@ namespace PerifaZenda
             this.comboBoxDepartamento.ValueMember = "descricao";
             this.comboBoxDepartamento.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartamento_SelectedIndexChanged);
             // 
+            // tipoFuncionarioBindingSource
+            // 
+            this.tipoFuncionarioBindingSource.DataMember = "TipoFuncionario";
+            this.tipoFuncionarioBindingSource.DataSource = this.dbPerifaZendaDataSet;
+            // 
+            // dbPerifaZendaDataSet
+            // 
+            this.dbPerifaZendaDataSet.DataSetName = "dbPerifaZendaDataSet";
+            this.dbPerifaZendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBoxCPF
             // 
             this.textBoxCPF.Font = new System.Drawing.Font("Verdana", 9F);
@@ -349,16 +360,6 @@ namespace PerifaZenda
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // dbPerifaZendaDataSet
-            // 
-            this.dbPerifaZendaDataSet.DataSetName = "dbPerifaZendaDataSet";
-            this.dbPerifaZendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tipoFuncionarioBindingSource
-            // 
-            this.tipoFuncionarioBindingSource.DataMember = "TipoFuncionario";
-            this.tipoFuncionarioBindingSource.DataSource = this.dbPerifaZendaDataSet;
-            // 
             // tipoFuncionarioTableAdapter
             // 
             this.tipoFuncionarioTableAdapter.ClearBeforeFill = true;
@@ -372,15 +373,16 @@ namespace PerifaZenda
             this.ClientSize = new System.Drawing.Size(800, 605);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.groupBoxAdicionarFornecedor);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdicionarFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adicionar Novo Funcionario";
             this.Load += new System.EventHandler(this.AdicionarFuncionario_Load_1);
             this.groupBoxAdicionarFornecedor.ResumeLayout(false);
             this.groupBoxAdicionarFornecedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbPerifaZendaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoFuncionarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbPerifaZendaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

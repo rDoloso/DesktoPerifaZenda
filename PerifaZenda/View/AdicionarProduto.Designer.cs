@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdicionarProduto));
             this.buttonHome = new System.Windows.Forms.Button();
             this.groupBoxAdicionarProduto = new System.Windows.Forms.GroupBox();
             this.comboBoxFornecedor = new System.Windows.Forms.ComboBox();
@@ -243,6 +244,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.groupBoxAdicionarProduto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdicionarProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adicionar Produto";

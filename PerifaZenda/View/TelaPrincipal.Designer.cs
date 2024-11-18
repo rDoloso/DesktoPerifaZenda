@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
             this.buttonAdicionarFuncionario = new System.Windows.Forms.Button();
             this.buttonAdicionarProduto = new System.Windows.Forms.Button();
             this.buttonPedirFornecedor = new System.Windows.Forms.Button();
@@ -350,6 +351,7 @@
             this.Controls.Add(this.buttonPedirFornecedor);
             this.Controls.Add(this.buttonAdicionarProduto);
             this.Controls.Add(this.buttonAdicionarFuncionario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PerifaZenda";

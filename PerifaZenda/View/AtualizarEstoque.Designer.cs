@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AtualizarEstoque));
             this.buttonHome = new System.Windows.Forms.Button();
             this.groupBoxAtualizarEstoque = new System.Windows.Forms.GroupBox();
             this.numericAtualizarEstoque = new System.Windows.Forms.NumericUpDown();
@@ -123,9 +124,9 @@
             this.label3.Location = new System.Drawing.Point(310, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 17);
+            this.label3.Size = new System.Drawing.Size(218, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "NOME/ID DO PRODUTO:";
+            this.label3.Text = "CODIGO/ID DO PRODUTO:";
             // 
             // label1
             // 
@@ -157,6 +158,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.groupBoxAtualizarEstoque);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AtualizarEstoque";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Atualizar Estoque";

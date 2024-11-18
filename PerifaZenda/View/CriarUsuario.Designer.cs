@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriarUsuario));
             this.groupBoxAdicionarProduto = new System.Windows.Forms.GroupBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -180,6 +181,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.groupBoxAdicionarProduto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CriarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CriarUsuario";

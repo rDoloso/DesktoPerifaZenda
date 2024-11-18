@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -88,6 +89,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.buttonLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PerifaZenda";

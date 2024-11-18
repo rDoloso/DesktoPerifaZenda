@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoFornecedor));
             this.groupBoxPedidoFornecedor = new System.Windows.Forms.GroupBox();
             this.comboBoxProduto = new System.Windows.Forms.ComboBox();
             this.numericQuantidade = new System.Windows.Forms.NumericUpDown();
@@ -236,6 +237,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.groupBoxPedidoFornecedor);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PedidoFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedir no fornecedor";
